@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _submit() {
-    Provider.of<ProviderController>(context, listen:false).Add_to_List(newTask);
+    Provider.of<ProviderController>(context, listen:false).Add_to_List(Todo(todoTitle: newTask));
     Navigator.pop(context);
     _textFieldController.clear();
   }
